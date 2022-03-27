@@ -12,27 +12,27 @@ import {
   NavBtnLink
 } from "./NavbarElements";
 
-export const Navbar = () => {
+export const Navbar = ({toggle}) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">dollar</NavLogo>
-          <MobileIcon>
+          <NavLogo to="/">Yolanda Gómez</NavLogo>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">About</NavLinks>
+              <NavLinks to="about">ABOUT</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="education">Education</NavLinks>
+              <NavLinks to="education">EDUCATION</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="projects">Projects</NavLinks>
+              <NavLinks to="projects">PROJECTS</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="contact">Contact</NavLinks>
+              <NavLinks to="contact">CONTACT</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>

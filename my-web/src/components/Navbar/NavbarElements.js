@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
+// Bar at the top sandwich and to the left
 export const Nav = styled.nav`
-  background: #000;
-
+  background: #449DD1;
   /* margin-top: -80px; */
   display: flex;
   justify-content: center;
@@ -16,32 +16,44 @@ export const Nav = styled.nav`
 
   @media screen and (min-width: 768px) {
     transition: 0.8s all ease;
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
     flex-direction: column;
-    width: 290px;
+    width: 340px;
     height: 100vh;
+    justify-content: center;
+    // justify-content: flex-start;
+    // align-items: center;
   }
 `;
+// Logo, both at the top sandwich and to the left
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  // justify-content: flex-start;
   height: 80px;
   z-index: 10;
   width: 100%;
-  padding: 0 24px;
+  // padding: 0 24px;
   max-width: 1100px;
 
+  // Desktop, full screen
   @media screen and (min-width: 768px) {
     flex-direction: column;
+    height: 120px;
     max-width: 180px; 
+    margin: 24px;
+    padding: 30px 20px;
+    justify-content: center;
+    // justify-content: flex-start;
   }
 `;
 
 export const NavLogo = styled(LinkR)`
-  color: #fff;
-  justify-self: flex-start;
+  color: #A9FFF7;
+  // justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
   display: flex;
@@ -50,7 +62,7 @@ export const NavLogo = styled(LinkR)`
   font-weight: bold;
   text-decoration: none;
 `;
-
+// Sandwich
 export const MobileIcon = styled.div` 
     display: none;
     
@@ -62,40 +74,36 @@ export const MobileIcon = styled.div`
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
-        color: #fff;
-        
+        color: #A9FFF7;        
       }
 `;
-
+// Menu at the left
 export const NavMenu = styled.ul`
   display: flex;
-//   align-items: center;
-align-items: flex-start;
+  align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: -22px;
-  color: red;
+  // margin-right: -22px;
   flex-direction: column;
-  width: 180px;
-  border: 2px dotted red;
-     
+  // width: 180px;
+  margin-top: 70px;
+
   @media screen and (max-width: 768px) {
     display: none;
   }
 `;
-
+// each item, li
 export const NavItem = styled.li`
-  height: 80px;
-  
+  height: 50px;
+  // color: #bfd9e7;
 `;
-
-export const NavLinks = styled(LinkS)` 
 // this is the react scrolling
+export const NavLinks = styled(LinkS)` 
   color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1 rem;
+  // padding: 1 rem;
   height: 100%;
   cursor: pointer;
 
@@ -103,7 +111,7 @@ export const NavLinks = styled(LinkS)`
     border-bottom: 3px solid #01bf71;
   }
 `;
-
+// Button that I'm not currently using
 export const NavBtn = styled.nav`
     display: flex:
     align-items: center;
@@ -113,8 +121,9 @@ export const NavBtn = styled.nav`
         display: none;
     }
 `;
-
+// Button link that I'm not currently using
 export const NavBtnLink = styled(LinkR)`
+    display: none;
     border-radius: 50px;
     text-decoration: none;
     background-color: #01bf71;
