@@ -37,7 +37,6 @@ export const Icon = styled.div`
 `;
 export const TopbarWrapper = styled.div`
     color: #fff;
-    border: 2px solid red;
 `;
 export const TopbarMenu = styled.ul`
     display: grid;
@@ -46,7 +45,7 @@ export const TopbarMenu = styled.ul`
     text-align-center;
 
     @media screen and (max-width: 768px) {
-        grid-template-rows: repeat(6, 100px);
+        grid-template-rows: repeat(4, 100px);
     }
 `
 export const TopbarLink = styled(LinkS)`

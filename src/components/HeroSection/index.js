@@ -1,13 +1,13 @@
 import React from 'react';
 import { FaFacebook, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
-import Video from '../../videos/video.mp4';
-import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroH2 } from './HeroElements';
+import MainImage from '../../images/image1.jpg';
+import { HeroContainer, HeroBg, ImageBg, HeroContent, HeroH1, HeroH2 } from './HeroElements';
 
 const HeroSection = () => {
   return (
     <HeroContainer id="home">
         <HeroBg>
-            <VideoBg autoplay loop muted src={Video} type='video/mp4' />
+            <ImageBg src={MainImage} type='image1/jpg' />
             {/* No funciona el video */}
         </HeroBg>
         {/* <HeroContent>
